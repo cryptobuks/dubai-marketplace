@@ -1,4 +1,4 @@
-     <div class="box-body">
+     <div class="box-body row">
        <div class="col-md-6">                
 			<div class="form-group">
 			 <?php echo e(Form::label('title', getPhrase( 'Title' ) )); ?> <?php echo required_field();; ?>

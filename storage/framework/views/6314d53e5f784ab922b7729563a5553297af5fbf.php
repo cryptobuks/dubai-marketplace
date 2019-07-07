@@ -127,10 +127,10 @@ if( ! isset($main_active) )
 						<?php endif; ?>
 					<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 					<!--for cart-->
-					<li>
+					<!-- <li>
 						<a href="<?php echo e(URL_CART); ?>"><span class="fa fa-shopping-cart"></span> <sup><?php echo e(sizeof(Cart::content())); ?></sup></a>
 
-					</li>
+					</li> -->
 
 					<?php if(Auth::check()): ?>
 					<li><a href="<?php echo e(URL_LOGOUT); ?>" onclick="event.preventDefault();
@@ -211,10 +211,10 @@ if( ! isset($main_active) )
           </li>
 
 				<!--for cart-->
-				<li>
+				<!-- <li>
 					<a href="<?php echo e(URL_CART); ?>"><span class="fa fa-shopping-cart"></span> <sup><?php echo e(sizeof(Cart::content())); ?></sup></a>
 
-				</li>
+				</li> -->
 			</ul>
 			<?php endif; ?>
 

@@ -13,7 +13,7 @@
 <div class=" content-area">
     <?php if(checkRole(getUserGrade(2))): ?>
     <div class="page-header">
-        <h4 class="page-title"><i class="fa fa-random"></i> <?php echo e($title); ?></h4>
+        <h4 class="page-title"><i class="fa fa-shopping-bag"></i> <?php echo e($title); ?></h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="<?php echo e(URL_DASHBOARD); ?>"><i class="fa fa-home"></i>  <?php echo e(getPhrase('home')); ?></a></li>
              <li class="breadcrumb-item active" aria-current="page"><a href="<?php echo e(URL_PRODUCTS_DASHBOARD); ?>"><?php echo e(getPhrase('products_dashboard')); ?></a></li>

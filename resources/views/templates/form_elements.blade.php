@@ -1,4 +1,4 @@
-     <div class="box-body">
+     <div class="box-body row">
        <div class="col-md-6">
                 
 				<div class="form-group">

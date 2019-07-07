@@ -12,7 +12,7 @@
 @section('content')
 <div class=" content-area">
     <div class="page-header">
-        <h4 class="page-title"><i class="fa fa-random"></i> {{$title}}</h4>
+        <h4 class="page-title"><i class="fa fa-hashtag"></i> {{$title}}</h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{PREFIX}}"><i class="fa fa-home"></i>  {{ getPhrase('home') }}</a></li>
              <li class="breadcrumb-item active" aria-current="page"><a href="{{URL_COUPONS}}">{{ getPhrase('Coupons')}}</a></li>

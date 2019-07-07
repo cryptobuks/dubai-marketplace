@@ -57,9 +57,10 @@
 <!-- /.content -->
 <?php $__env->stopSection(); ?>
  
-<?php $__env->startSection('footer_scripts'); ?>
-<?php echo $__env->make('common.datatables',array('route'=>URL_MENU_LIST,'route_as_url'=>TRUE), array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+ <?php $__env->startSection('footer_scripts'); ?>
+ <?php echo $__env->make('common.datatables',array('route'=>URL_MENU_LIST,'route_as_url'=>TRUE), array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+  
+  <?php echo $__env->make('common.deletescript', array('route'=>URL_MENU_DELETE), array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+ <?php $__env->stopSection(); ?>
  
- <?php echo $__env->make('common.deletescript', array('route'=>URL_MENU_DELETE), array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-<?php $__env->stopSection(); ?>
 <?php echo $__env->make($layout, array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

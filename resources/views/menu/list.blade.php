@@ -58,8 +58,9 @@
 <!-- /.content -->
 @endsection
  
-@section('footer_scripts')
-@include('common.datatables',array('route'=>URL_MENU_LIST,'route_as_url'=>TRUE))
+ @section('footer_scripts')
+ @include('common.datatables',array('route'=>URL_MENU_LIST,'route_as_url'=>TRUE))
+  
+  @include('common.deletescript', array('route'=>URL_MENU_DELETE))
+ @stop
  
- @include('common.deletescript', array('route'=>URL_MENU_DELETE))
-@stop

@@ -260,7 +260,7 @@
 						?>
 						<tr>
 							<td class="submit" colspan="4" style="float: none; clear:both; background: #fff;">
-								 <button class="button-secondary digi_add_repeatable" style="margin: 6px 0 10px;">{{ getPhrase('add_new_file') }}</button> 
+								 <button class=" btn btn-primary digi_add_repeatable" style="margin: 6px 0 10px;">{{ getPhrase('add_new_file') }}</button> 
 							
 						</tr>
 					</tbody>
@@ -350,7 +350,7 @@
 			 {{ Form::text('meta_tag_title', $value = null , $attributes = array('class'=>'form-control', 'placeholder' => getPhrase( 'title_meta_tag' ), 'data-toggle' => 'tooltip', 'title' => getPhrase('product_seo_title'))) }}
 			</div>
 		</div>
-			
+		<div class="row">
 			<div class="col-md-6">
 				<div class="form-group">
 				{{ Form::label('meta_tag_description', getPhrase( 'description_meta_tag' ) ) }}               
@@ -363,7 +363,7 @@
 				{{ Form::textarea('meta_tag_keywords', $value = null, $attributes = array('class'=>'form-control ckeditor', 'placeholder' => getPhrase( 'kewords_meta_tags_separated_with_comma(,)' ), 'rows'=>'4', 'data-toggle' => 'tooltip')) }}
 				</div>
 			</div>
-			
+		</div>		
      
 			
         </div>   

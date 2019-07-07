@@ -8,7 +8,7 @@
 <div class="row">
   <div class="col-lg-12">
     <ol class="breadcrumb">
-      <li><a href="{{URL_DASHBOARD}}"><i class="fa fa-home"></i> {{ getPhrase('home') }}</a> </li>
+      <li><a href="{{URL_DASHBOARD}}"><i class="fa fa-category"></i> {{ getPhrase('home') }}</a> </li>
       <li><a  href="{{URL_CATEGORIES_DASHBOARD}}">{{ getPhrase('categories_dashboard')}}</a></li>
        <li><a  href="{{URL_CATEGORIES}}">{{ getPhrase('categories_list')}}</a></li>          
       <li class="active">{{isset($title) ? $title : ''}}</li>
@@ -32,18 +32,18 @@
             <!-- /.box-header -->
       
             <?php $button_name = getPhrase('create'); ?>
-@if ($record)
-<?php $button_name = getPhrase('update'); ?>
-{{ Form::model($record, 
-array('url' => URL_CATEGORIES_EDIT.$record->slug, 
-'method'=>'patch','name'=>'formUsers ', 'files'=>'true' )) }}
-@else
-{!! Form::open(array('url' => URL_CATEGORIES_ADD, 'method' => 'POST', 'name'=>'formUsers ', 'files'=>'true')) !!}
-@endif
+            @if ($record)
+            <?php $button_name = getPhrase('update'); ?>
+            {{ Form::model($record, 
+            array('url' => URL_CATEGORIES_EDIT.$record->slug, 
+            'method'=>'patch','name'=>'formUsers ', 'files'=>'true' )) }}
+            @else
+            {!! Form::open(array('url' => URL_CATEGORIES_ADD, 'method' => 'POST', 'name'=>'formUsers ', 'files'=>'true')) !!}
+            @endif
 
-@include('categories.form_elements', array('button_name'=> $button_name, 'record' => $record, 'parent_categories'=>$parent_categories ))
+            @include('categories.form_elements', array('button_name'=> $button_name, 'record' => $record, 'parent_categories'=>$parent_categories ))
 
-{!! Form::close() !!}
+            {!! Form::close() !!}
           
            
           </div>

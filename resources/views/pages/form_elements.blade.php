@@ -1,5 +1,6 @@
-     <div class="box-body">
-       <div class="col-md-6">
+     <div class="box-body row">
+		 
+       		<div class="col-md-6">
                 
 				<div class="form-group">
                  {{ Form::label('title', getPhrase( 'Title' ) ) }} {!! required_field(); !!}
@@ -11,6 +12,8 @@
 				$status['yes'] = getPhrase( 'Yes' );
 				$status['no'] = getPhrase('No');
 				?>
+       		</div>
+			<div class="col-md-6"> 
 				<div class="form-group">
 				{{ Form::label('show_in_menu', getPhrase( 'Show in menu?' ) ) }}
 				{{Form::select('show_in_menu', $status, null, ['class'=>'form-control', "id"=>"show_in_menu"])}}

@@ -4,7 +4,7 @@
 <?php $__env->startSection('content'); ?>
 <div class=" content-area">
     <div class="page-header">
-        <h4 class="page-title"><i class="fa fa-users"></i> <?php echo e($title); ?></h4>
+        <h4 class="page-title"><i class="fa fa-random"></i> <?php echo e($title); ?></h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="<?php echo e(URL_DASHBOARD); ?>"><i class="fa fa-home"></i>  <?php echo e(getPhrase('home')); ?></a></li>
             <li class="breadcrumb-item active" aria-current="page"><a href="<?php echo e(URL_CATEGORIES_DASHBOARD); ?>"><?php echo e(getPhrase('categories_dashboard')); ?></a> </li>

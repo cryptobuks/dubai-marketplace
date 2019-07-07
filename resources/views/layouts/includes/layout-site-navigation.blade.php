@@ -127,10 +127,10 @@ if( ! isset($main_active) )
 						@endif
 					@endforeach
 					<!--for cart-->
-					<li>
+					<!-- <li>
 						<a href="{{ URL_CART }}"><span class="fa fa-shopping-cart"></span> <sup>{{ sizeof(Cart::content()) }}</sup></a>
 
-					</li>
+					</li> -->
 
 					@if(Auth::check())
 					<li><a href="{{URL_LOGOUT}}" onclick="event.preventDefault();
@@ -210,10 +210,10 @@ if( ! isset($main_active) )
           </li>
 
 				<!--for cart-->
-				<li>
+				<!-- <li>
 					<a href="{{ URL_CART }}"><span class="fa fa-shopping-cart"></span> <sup>{{ sizeof(Cart::content()) }}</sup></a>
 
-				</li>
+				</li> -->
 			</ul>
 			@endif
 
